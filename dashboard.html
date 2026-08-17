@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الفيزياء - الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي الثابت -->
+    <header class="navbar">
+        <div class="logo-area">
+            <span class="menu-btn" onclick="toggleSidebar()">&#9776;</span>
+            <img src="55.jpg" alt="شعار المنصة" class="custom-logo">
+            <h1 class="logo">المهندس <span>محمد صلاح</span></h1>
+        </div>
+        <div class="header-actions">
+            <button class="theme-btn">☀️</button>
+            <span class="notification-icon">🔔</span>
+        </div>
+    </header>
+
+    <!-- القائمة الجانبية -->
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li class="active"><a href="dashboard.html">الرئيسية</a></li>
+            <li><a href="#">الكورسات</a></li>
+            <li><a href="#">المنتدى</a></li>
+            <li><a href="#">حسابي</a></li>
+        </ul>
+    </aside>
+
+    <!-- المحتوى الرئيسي للمنصة -->
+    <main class="dashboard-content">
+        <!-- الإحصائيات السريعة -->
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h2>0</h2>
+                <p>الفيديوهات المحفوظة</p>
+            </div>
+            <div class="stat-box">
+                <h2>0</h2>
+                <p>كورساتك الحالية</p>
+            </div>
+            <div class="stat-box">
+                <h2>0</h2>
+                <p>كورسات مكتملة</p>
+            </div>
+        </div>
+
+        <!-- قسم الكورسات المقترحة -->
+        <section class="courses-section">
+            <h2>الكورسات المقترحة</h2>
+            <div class="course-card">
+                <div class="course-header-img">
+                    <h3>كورس التأسيس في الفيزياء</h3>
+                </div>
+                <div class="course-details">
+                    <h3>كورس الامتحان التأسيسي</h3>
+                    <span class="free-badge">كورس مجاني</span>
+                    <p>⏰ الامتحان متاح لمدة 48 ساعة فقط</p>
+                    <div class="course-buttons">
+                        <button class="btn-outline">الدخول للكورس</button>
+                        <button class="btn-solid">عرض باقي التفاصيل</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
